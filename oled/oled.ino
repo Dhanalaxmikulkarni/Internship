@@ -31,10 +31,12 @@ if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
   display.clearDisplay();
 
 
-  display.setTextSize(1); // Draw 2X-scale text
+  display.setTextSize(2); // Draw 2X-scale text
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(0, 0);
   display.println(F("Hello !!!"));
+  display.setCursor(20, 40);
+  display.println(F("Dhanya"));
   display.display();      // Show initial text
   delay(3000); 
 
@@ -56,9 +58,9 @@ display.clearDisplay();
   display.setTextSize(2); // Draw 2X-scale text
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(20, 10);
-  display.println(F("MQ135 Reading"));
+  display.println(F("GOOD"));
    display.setCursor(20, 50);
-  display.println(sensorValue);
+  display.println("MORNING");
   display.display();      // Show initial text
   
 
